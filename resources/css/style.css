@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(228, 228, 228);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER SECTION  */
+header {
+    padding: 3rem 0 1rem 0;
+    color: rgb(32, 27, 27);
+    color: tomato;
+    font-size: 3rem;
+    font-family: lato;
+    font-weight: 100;
+}
+
+/* MAIN SECTION  */
+#main {
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(10px 10px 10px black);
+    height: 30rem;
+    /* width: 55rem; */
+}
+
+/* PLAYER SECTION  */
+#player-1,
+#player-2 {
+    width: 20rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#player-1 {
+    /* border-left: 20px solid rgb(226, 38, 226); */
+}
+
+
+#player-1-heading,
+#player-2-heading {
+    height: 20%;
+    font-size: 3rem;
+    padding-top: 1rem;
+    font-family: lato;
+}
+
+#player-1-score,
+#player-2-score {
+    background-color: white;
+    height: 70%;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: tomato;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#player-1-message,
+#player-2-message {
+    height: 10%;
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: blueviolet
+}
+
+.active-player {
+    color: orangered;
+    border-left: 15px solid rgb(226, 38, 226);
+    border-left-style: groove;
+    border-left-width: 15px;
+}
+
+
+/* CONTROL SECTION  */
+#control-section {
+    height: 30rem;
+    width: 15rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#new-game {
+    height: 20%;
+    background-color: rgb(226, 38, 226);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-game a {
+    border: 2px solid white;
+    border-radius: 7px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.5s;
+    
+}
+
+#new-game a:hover {
+    background: white;
+    border: 2px solid transparent;
+    color: black;
+}
+
+
+#dice {
+    height: 40%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 38, 226);
+}
+
+#dice img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+#dice-roller a {
+    /* border: 1px solid blue; */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 300px;
+    background-color: white;
+    color: black;
+    filter: drop-shadow(1px 1px 2px black) ;
+    transition: filter 0.5s;
+    
+}
+
+#dice-roller a:hover {
+    filter: drop-shadow(0 0 0 black);
+
+}
+
+#dice-roller {
+    height: 20%;
+    background-color: rgb(226, 38, 226);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dice-hold {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(226, 38, 226);
+}
+#dice-hold a{
+    padding: 10px 35px;
+    background-color: rgb(252, 252, 31);
+    text-decoration: none;
+    filter: drop-shadow(1px 1px 2px black);
+    border-radius: 300px;
+    color: black;
+    transition: filter 0.5s;  
+}
+
+#dice-hold a:hover {
+    filter: drop-shadow(0 0 0 black);
+}
+
+#rules {
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+#rules p {
+    border-bottom: 1px solid blueviolet;
+    opacity: 0.75;
+}
+
+#rules ul {
+    margin-left: 10%;
+}
+
+#rules ul li{
+    padding-bottom: 1.5rem;
+    width: 90%;
+    list-style: square;
+    opacity: 0.9;
+}
+
+#round-meter {
+    height: 20%;
+    background-color: rgb(226, 38, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: lato;
+}
+
+
+
+/* PLAYER 2 SECTION  */
+
+/* #player-2-heading {
+    background-color: rgb(255, 255, 255);
+    height: 20%;
+    font-size: 3rem;
+    padding-top: 1rem;
+} */
+
+/* #player-2-score {
+    background-color: rgb(255, 255, 255);
+    height: 70%;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

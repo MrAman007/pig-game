@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice - Pig Game</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PIG GAME</h1>
+    </header>
+
+    <!-- main container -->
+    <div id="main">
+
+        <!-- first player  -->
+        <div id="player-1">
+            <div id="player-1-heading"><p class="player-1-head">Player 1</p></div>
+            <div id="player-1-score">0</div>
+            <div id="player-1-message"></div>
+        </div>
+
+        <!-- dice and controls  -->
+        <div id="control-section">
+            <div id="round-meter"></div>
+            <div id="new-game"><a id="start-game-btn" href="#">Start New Game</a></div>
+            <div id="dice"><img id="dice-img" src="./resources/img/dice-1.png" alt="dice image"></div>
+            <div id="dice-roller"><a id="dice-roll-btn" href="#">Roll Dice</a></div>
+            <div id="dice-hold"><a id="dice-hold-btn" href="#">Hold</a></div>
+            <div id="rules">
+                <p>RULES OF THE GAME</p>
+                <ul>
+                    <li>Each player gets a chance to roll the dice and they can roll them until they want to hold.</li>
+                    <li>The points of dice will be added after every roll but if the player gets a 1 then all the current points will become 0</li>
+                    <li>The first player to reach 100 points will win the game</li>
+                </ul>
+            </div>
+        </div>
+        <!-- second player  -->
+        <div id="player-2">
+            <div id="player-2-heading"><p class="player-2-head">Player 2</p></div>
+            <div id="player-2-score">0</div>
+            <div id="player-2-message"></div>
+        </div>
+    </div>
+
+
+
+    <script src="./resources/js/app.js"></script>
+</body>
+</html>
