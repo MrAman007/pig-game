@@ -10,13 +10,17 @@ body {
     text-align: center;
     background-color: rgb(228, 228, 228);
     font-family: Arial, Helvetica, sans-serif;
+
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 /* HEADER SECTION  */
 header {
     padding: 3rem 0 1rem 0;
-    color: rgb(32, 27, 27);
-    color: tomato;
+    color: white;
     font-size: 3rem;
     font-family: lato;
     font-weight: 100;
@@ -180,7 +184,7 @@ header {
     height: 70%;
     justify-content: center;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: space-around;
     background-color: whitesmoke;
     overflow: scroll;
 }
@@ -188,7 +192,7 @@ header {
 #rules p {
     border-bottom: 1px solid blueviolet;
     opacity: 0.75;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 #rules ul {
@@ -196,10 +200,12 @@ header {
 }
 
 #rules ul li{
-    padding-bottom: 8px;
+    padding-bottom: 15px;
     width: 90%;
     list-style: square;
     opacity: 0.9;
+    font-size: 14px;
+    text-align: justify;
 }
 
 #round-meter {
