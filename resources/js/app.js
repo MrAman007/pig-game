@@ -1,4 +1,4 @@
-let score, currentScore, activePlayer,currentRound;
+let score, currentScore, activePlayer,currentRound,finalScore;
 
 init();
 
@@ -10,6 +10,7 @@ document.getElementById('start-game-btn').addEventListener('click', function() {
     // hide elements 
     document.getElementById('new-game').style.display = 'none';
     document.getElementById('rules').style.display = 'none';
+    document.getElementById('goal-input').style.display = 'none';
     
     // show elements 
     document.getElementById('dice').style.display = 'flex';
@@ -63,9 +64,13 @@ document.getElementById('dice-hold-btn').addEventListener('click', function() {
 
     // UPDATE THE UI
     document.getElementById('player-'+activePlayer+'-score').textContent = score[scoreIndex];
+
+    let inputValue = document.getElementById('goal-input-field').value;
+    finalScore = inputValue > 0 ? inputValue : 100; 
+    console.log(finalScore);
     
     // CHECK IF PLAYER WON THE GAME
-    if (score[scoreIndex] >= 10) {
+    if (score[scoreIndex] >= finalScore) {
         document.getElementById('player-'+activePlayer+'-score').textContent = 'WINNER'
         document.getElementById('round-meter').style.display = 'none';
         document.getElementById('dice-roll-btn').style.display = 'none';
@@ -109,6 +114,7 @@ function init() {
     currentRoundScore = 0;
     currentRound = 1;
     activePlayer = 1;
+    finalScore = 100;
 
     // Star Game Page 
 
@@ -118,5 +124,5 @@ function init() {
     document.getElementById('round-meter').style.display = 'none';
     document.querySelector('.player-1-head').classList.remove('active-player');
     document.querySelector('.player-2-head').classList.remove('active-player');
-
+ 
 }

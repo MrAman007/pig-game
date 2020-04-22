@@ -38,10 +38,6 @@ header {
     background-color: rgb(255, 255, 255);
 }
 
-#player-1 {
-    /* border-left: 20px solid rgb(226, 38, 226); */
-}
-
 
 #player-1-heading,
 #player-2-heading {
@@ -181,17 +177,18 @@ header {
 
 #rules {
     display: flex;
-    height: 80%;
+    height: 70%;
     justify-content: center;
     flex-wrap: wrap;
-    align-content: space-around;
+    align-content: center;
     background-color: whitesmoke;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 #rules p {
     border-bottom: 1px solid blueviolet;
     opacity: 0.75;
+    margin-bottom: 15px;
 }
 
 #rules ul {
@@ -199,7 +196,7 @@ header {
 }
 
 #rules ul li{
-    padding-bottom: 1.5rem;
+    padding-bottom: 8px;
     width: 90%;
     list-style: square;
     opacity: 0.9;
@@ -215,22 +212,18 @@ header {
     font-family: lato;
 }
 
-
-
-/* PLAYER 2 SECTION  */
-
-/* #player-2-heading {
-    background-color: rgb(255, 255, 255);
-    height: 20%;
-    font-size: 3rem;
-    padding-top: 1rem;
-} */
-
-/* #player-2-score {
-    background-color: rgb(255, 255, 255);
-    height: 70%;
-    font-size: 5rem;
+#goal-input {
+    height: 10%;
+    background-color: rgb(226, 38, 226);
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
+
+#goal-input-field {
+    padding: 4px 4px;
+    font-family: arial;
+    text-align: center;
+    color: #555;
+}
+
